@@ -6,10 +6,10 @@ import * as path from 'path';
 
 git.plugins.set('fs', fs);
 
-type Fname2HTML = Map<string, string>;
+type Fname2Content = Map<string, string>;
 
 export const acquireGithubWiki = (url: string, to_dir: string | undefined,
-                                  callback: (error?: Error, fname2html?: Fname2HTML) => void) => {
+                                  callback: (error?: Error, fname2content?: Fname2Content) => void) => {
     const dir: string = to_dir || path.join(tmpdir(), url.slice(url.lastIndexOf('/') + 1));
     git
         .clone({
@@ -38,6 +38,6 @@ export const acquireGithubWiki = (url: string, to_dir: string | undefined,
 if (require.main === module) {
     acquireGithubWiki('https://github.com/isomorphic-git/isomorphic-git', void 0, (err, fname2html) => {
         if (err != null) throw err;
-        console.info((fname2html as Fname2HTML).keys());
+        console.info((fname2html as Fname2Content).keys());
     });
 }
