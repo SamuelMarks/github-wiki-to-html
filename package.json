@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^14.14.28"
+    "@types/node": "^16.4.0"
   },
   "dependencies": {
-    "isomorphic-git": "^1.8.1"
+    "isomorphic-git": "^1.9.2"
   }
 }
