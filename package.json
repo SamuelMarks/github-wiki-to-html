@@ -1,6 +1,6 @@
 {
   "name": "github-wiki-to-html",
-  "version": "0.0.2",
+  "version": "0.0.3-alpha",
   "description": "GitHub wiki to HTML",
   "main": "index.js",
   "scripts": {
@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^16.4.0"
+    "@types/node": "^18.15.10"
   },
   "dependencies": {
-    "isomorphic-git": "^1.9.2"
+    "isomorphic-git": "^1.23.0"
   }
 }
